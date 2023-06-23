@@ -4,9 +4,7 @@
 #include<conio.h>
 
 void main(){
-    printf("---------------------------------------------------------------------------\n");
-    printf("\t\t\tNUMBER GUESSING GAME\n");
-    printf("---------------------------------------------------------------------------\n\n");
+    printf("NUMBER GUESSING GAME\n");
     srand(time(0));
     int a=( rand() % 100 + 1), b, c=0, k=10;
     printf("Guess a number between 1 to 100:\n");
@@ -29,8 +27,6 @@ void main(){
         k--;
     }
     abc:
-    printf("\n---------------------------------------------------------------------------\n\n");
-
     if(k==10){
         printf("$$$$$$$$  BINGO  $$$$$$$$\n !!!!You got it in first guess!!!!");
     }
@@ -44,6 +40,5 @@ void main(){
         printf("OOOOOPSSS!!!!!!!!\nYour score is: %d\nBetter Luck Next Time", k);
     }
 
-    printf("\n---------------------------------------------------------------------------\n\n");
     getch();
 }
